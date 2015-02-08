@@ -1,10 +1,10 @@
 object FrmMain: TFrmMain
-  Left = 614
+  Left = 1031
   Height = 565
-  Top = 252
+  Top = 202
   Width = 460
   AllowDropFiles = True
-  Caption = 'WII-ESC Flash Tool 0.7'
+  Caption = 'WII-ESC Flash Tool 0.8'
   ClientHeight = 565
   ClientWidth = 460
   Constraints.MinHeight = 565
@@ -20,7 +20,7 @@ object FrmMain: TFrmMain
   OnDropFiles = FormDropFiles
   OnShow = FormShow
   SessionProperties = 'ActiveControl;CmbBaud.Text;CmbConfigurations.ItemIndex;CmbPgmType.ItemIndex;CmbPorts.Text;CmbPorts.Top;CmbTarget.ItemIndex;Height;Left;Top;Width;CmbHFuse.ItemIndex'
-  LCLVersion = '1.0.1.3'
+  LCLVersion = '1.2.6.0'
   object gbProgrammer: TGroupBox
     Left = 8
     Height = 72
@@ -45,9 +45,9 @@ object FrmMain: TFrmMain
     end
     object Label1: TLabel
       Left = 6
-      Height = 14
+      Height = 13
       Top = 6
-      Width = 25
+      Width = 24
       Caption = 'Type'
       ParentColor = False
     end
@@ -62,10 +62,10 @@ object FrmMain: TFrmMain
       TabOrder = 1
     end
     object Label2: TLabel
-      Left = 261
-      Height = 14
+      Left = 262
+      Height = 13
       Top = 8
-      Width = 21
+      Width = 20
       Anchors = [akTop, akRight]
       Caption = 'Port'
       ParentColor = False
@@ -81,10 +81,10 @@ object FrmMain: TFrmMain
       TabOrder = 2
     end
     object Label3: TLabel
-      Left = 349
-      Height = 14
+      Left = 350
+      Height = 13
       Top = 8
-      Width = 31
+      Width = 30
       Anchors = [akTop, akRight]
       Caption = 'Speed'
       ParentColor = False
@@ -128,9 +128,9 @@ object FrmMain: TFrmMain
     end
     object Label4: TLabel
       Left = 6
-      Height = 14
+      Height = 13
       Top = 6
-      Width = 33
+      Width = 32
       Caption = 'Target'
       ParentColor = False
     end
@@ -223,15 +223,14 @@ object FrmMain: TFrmMain
         11060B10100F120C081313130F141212120000100F100C081313131313130F12
         1210100E0C081313131313131313131313131313131313131313
       }
-      NumGlyphs = 0
       OnClick = BtnFirmwareInfoClick
     end
     object Label6: TLabel
       Cursor = crHandPoint
-      Left = 358
-      Height = 14
+      Left = 359
+      Height = 13
       Top = 0
-      Width = 69
+      Width = 68
       Anchors = [akTop, akRight]
       Caption = 'ESC Database'
       Font.CharSet = RUSSIAN_CHARSET
@@ -303,7 +302,6 @@ object FrmMain: TFrmMain
         0E0C0C0A0909090909090909090909090D0E0B0A090909090909090909090909
         090E0A0909090909090909090909090909090909090909090909
       }
-      NumGlyphs = 0
       Visible = False
       OnClick = BtnFirmwareWarnClick
     end
@@ -325,9 +323,9 @@ object FrmMain: TFrmMain
     TabOrder = 3
     object Label5: TLabel
       Left = 6
-      Height = 14
+      Height = 13
       Top = 8
-      Width = 142
+      Width = 141
       Caption = 'Predefined throttle endpoints'
       ParentColor = False
     end
@@ -416,7 +414,6 @@ object FrmMain: TFrmMain
         11060B10100F120C081313130F141212120000100F100C081313131313130F12
         1210100E0C081313131313131313131313131313131313131313
       }
-      NumGlyphs = 0
       OnClick = BtnConfigurationInfoClick
     end
     object Button5: TButton
@@ -894,6 +891,14 @@ object FrmMain: TFrmMain
     Options2 = [eoFoldedCopyPaste, eoOverwriteBlock, eoAutoHideCursor]
     ReadOnly = True
     RightEdge = 200
+    SelectedColor.FrameEdges = sfeAround
+    SelectedColor.BackPriority = 50
+    SelectedColor.ForePriority = 50
+    SelectedColor.FramePriority = 50
+    SelectedColor.BoldPriority = 50
+    SelectedColor.ItalicPriority = 50
+    SelectedColor.UnderlinePriority = 50
+    SelectedColor.StrikeOutPriority = 50
     SelectionMode = smColumn
     inline SynLeftGutterPartList1: TSynGutterPartList
       object SynGutterChanges1: TSynGutterChanges
@@ -928,9 +933,9 @@ object FrmMain: TFrmMain
     end
     object Label7: TLabel
       Left = 6
-      Height = 14
+      Height = 13
       Top = 6
-      Width = 31
+      Width = 30
       Caption = 'HFuse'
       ParentColor = False
     end
@@ -1008,7 +1013,6 @@ object FrmMain: TFrmMain
         11060B10100F120C081313130F141212120000100F100C081313131313130F12
         1210100E0C081313131313131313131313131313131313131313
       }
-      NumGlyphs = 0
       OnClick = BtnFuseInfoClick
     end
     object BtnFirmwareWarn1: TSpeedButton
@@ -1061,7 +1065,6 @@ object FrmMain: TFrmMain
         0E0C0C0A0909090909090909090909090D0E0B0A090909090909090909090909
         090E0A0909090909090909090909090909090909090909090909
       }
-      NumGlyphs = 0
       Visible = False
       OnClick = BtnFirmwareWarnClick
     end

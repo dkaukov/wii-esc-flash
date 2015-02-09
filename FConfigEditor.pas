@@ -15,6 +15,7 @@ type
     Button1: TButton;
     Button2: TButton;
     CmbBraking: TCheckBox;
+    CmbOneshot: TCheckBox;
     CmbStickCal: TCheckBox;
     CmbRev: TCheckBox;
     CmbTimingAdv: TComboBox;
@@ -61,6 +62,7 @@ type
      timing_adv: Shortint;
      stick_cal_dis: Byte;
      rev: Byte;
+     oneshot125_support: Byte;
   end;
   TEEPROMLayout = packed record
     __ver_magic: Byte;
@@ -98,6 +100,7 @@ begin
     CmbTimingAdv.ItemIndex := timing_adv;
     CmbStickCal.Checked := stick_cal_dis = 0;
     CmbRev.Checked := rev <> 0;
+    CmbOneshot.Checked := oneshot125_support <> 0;
   end;
 end;
 
@@ -115,6 +118,7 @@ begin
     timing_adv := CmbTimingAdv.ItemIndex;
     stick_cal_dis := Byte(not CmbStickCal.Checked);
     rev := Byte(CmbRev.Checked);
+    oneshot125_support:= Byte(CmbOneshot.Checked);
   end;
 end;
 
